@@ -5608,6 +5608,18 @@
             "1101"
         ]
     },
+    "NRF52832_MDK": {
+        "inherits": [
+          "MCU_NRF52832"
+        ],
+        "release_versions": [
+          "5"
+        ],
+        "detect_code": [
+          "1024"
+        ],
+        "device_name": "nRF52832_xxAA"
+    },
     "SDT52832B": {
         "inherits": [
             "MCU_NRF52832"
@@ -5747,6 +5759,18 @@
         "supported_application_profiles": [
             "rtos", "bare-metal"
         ]
+    },
+    "NRF52840_MDK": {
+        "inherits": [
+          "MCU_NRF52840"
+        ],
+        "release_versions": [
+          "5"
+        ],
+        "detect_code": [
+          "1026"
+        ],
+        "device_name": "nRF52840_xxAA",
     },
     "ARDUINO_NANO33BLE": {
         "inherits": [
