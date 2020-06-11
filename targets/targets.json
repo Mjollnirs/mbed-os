@@ -5770,7 +5770,12 @@
         "detect_code": [
           "1026"
         ],
-        "device_name": "nRF52840_xxAA",
+        "device_has_remove": ["ITM"],
+        "macros_add": [
+             "CONFIG_GPIO_AS_PINRESET",
+             "NRF52_ERRATA_20"
+         ],
+        "device_name": "nRF52840_xxAA"
     },
     "ARDUINO_NANO33BLE": {
         "inherits": [

@@ -57,7 +57,7 @@ typedef enum {
 #define PinDef(port_num, pin_num) P##port_num##_##pin_num = NRF_GPIO_PIN_MAP(port_num, pin_num)
 
 
-typedef enum {    
+typedef enum {
     PinDef(0 , 0), // P0_0 = 0...
     PinDef(0 , 1),
     PinDef(0 , 2),
@@ -89,25 +89,25 @@ typedef enum {
     PinDef(0 , 28),
     PinDef(0 , 29),
     PinDef(0 , 30),
-    PinDef(0 , 31),    
-    
+    PinDef(0 , 31),
+
     PinDef(1 , 0), //P1_1 = 32...
-	PinDef(1 , 1),
-	PinDef(1 , 2),
-	PinDef(1 , 3),
-	PinDef(1 , 4),
-	PinDef(1 , 5),
-	PinDef(1 , 6),
-	PinDef(1 , 7),
-	PinDef(1 , 8),
-	PinDef(1 , 9),
-	PinDef(1 , 10),
-	PinDef(1 , 11),
-	PinDef(1 , 12),
-	PinDef(1 , 13),
-	PinDef(1 , 14),
-	PinDef(1 , 15),
-    
+    PinDef(1 , 1),
+    PinDef(1 , 2),
+    PinDef(1 , 3),
+    PinDef(1 , 4),
+    PinDef(1 , 5),
+    PinDef(1 , 6),
+    PinDef(1 , 7),
+    PinDef(1 , 8),
+    PinDef(1 , 9),
+    PinDef(1 , 10),
+    PinDef(1 , 11),
+    PinDef(1 , 12),
+    PinDef(1 , 13),
+    PinDef(1 , 14),
+    PinDef(1 , 15),
+
     // Port0
     p0  = P0_0,
     p1  = P0_1,
@@ -141,7 +141,7 @@ typedef enum {
     p29 = P0_29,
     p30 = P0_30,
     p31 = P0_31,
-    
+
     // Port1
     p32 = P1_0,
     p33 = P1_1,
@@ -159,18 +159,29 @@ typedef enum {
     p45 = P1_13,
     p46 = P1_14,
     p47 = P1_15,
+
+    LED_RED   = p23,
+    LED_GREEN = p22,
+    LED_BLUE  = p24,
+
+    LED1 = LED_RED,
+    LED2 = LED_GREEN,
+    LED3 = LED_BLUE,
+
+    BUTTON_USER = p32,
+    BUTTON_GROVE1 = p27,   // on Base Dock Grove#1
+    BUTTON_GROVE2 = p29,   // on Base Dock Grove#2
+    BUTTON_GROVE3 = p31,   // on Base Dock Grove#3
+    BUTTON_GROVE4 = p3,    // on Base Dock Grove#4
+
+    BUTTON1 = BUTTON_GROVE1, // on Base Dock Grove#1
+    BUTTON2 = BUTTON_GROVE2, // on Base Dock Grove#2
+    BUTTON3 = BUTTON_GROVE3, // on Base Dock Grove#3
+    BUTTON4 = BUTTON_GROVE4, // on Base Dock Grove#4
+    USR_BTN = BUTTON_USER,   // on Board
+
     // Not connected
     NC = (int)0xFFFFFFFF,
-    
-    LED1    = p22,
-    LED2    = p23,
-    LED3    = p24,
-
-    BUTTON1 = p27,   // on Base Dock Grove#1
-    BUTTON2 = p29,   // on Base Dock Grove#2
-    BUTTON3 = p31,   // on Base Dock Grove#3
-    BUTTON4 = p3,    // on Base Dock Grove#4
-
     RX_PIN_NUMBER  = p19,
     TX_PIN_NUMBER  = p20,
     CTS_PIN_NUMBER = NC,
